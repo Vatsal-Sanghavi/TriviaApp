@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tvGameNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:minWidth="@dimen/_50sdp"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Game 1 : " />
+
+        <TextView
+            android:id="@+id/tvGameDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tvGameNo"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:text="20/01/21" />
+
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGameNo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:minWidth="@dimen/_50sdp"
+            android:text="@string/name"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvNameLabel"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tvNameLabel"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Suresh Raina" />
+
+        <TextView
+            android:id="@+id/tvQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/question_1"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvA1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQ1"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Ans : Answer 1" />
+
+        <TextView
+            android:id="@+id/tvQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvA1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/question_2"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQ2"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Ans : Answer 2" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

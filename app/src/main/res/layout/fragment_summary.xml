@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemGames"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/_14sdp"
+        tools:text="@string/summery_header" />
+
+    <include
+        android:id="@+id/itemGames"
+        layout="@layout/item_games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tvHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:minWidth="@dimen/_90sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/history"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tvFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:minWidth="@dimen/_90sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/finish"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
